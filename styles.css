@@ -1,0 +1,176 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url(assets/Roboto/Roboto-Regular.ttf);
+}
+*{
+  font-family: 'Roboto';
+}
+body{
+  margin: 0;
+  padding: 0;  
+  height: 100%;
+  
+}
+nav,main{
+  padding-left: 15%;
+  padding-right: 15%;
+
+}
+main{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+nav{
+  height: 50px;
+
+}
+header{
+  margin: 0;
+  padding: 0;  
+}
+
+ ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+
+ 
+
+}
+li {
+  display: block;
+}
+li a {
+  display:inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+img{
+  background: #E5E7EB;
+}
+footer{
+  position: relative;
+  bottom: 0;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center; 
+}
+p{
+  text-align: justify;
+}
+button{
+  border: none;
+  padding: 5px 25px;
+  border-radius: 10px;
+  display: block;
+}
+.border-white{
+  border-style: solid;
+  border-color: #F9FAF8;
+}
+.rounded{
+  border-radius: 15px;
+}
+
+.logo{
+  flex: 1;
+  padding-left: 0;
+}
+
+.main-image{
+  width: 100%;
+  height: 100%;
+  min-width: 350px;
+  
+}
+.container{
+  padding: 20px;
+  margin: 10px;
+  justify-content:center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column{
+  display: flex;
+  flex-direction:column;
+  margin: 10px;
+  padding: 10px;
+  justify-content: center;
+  align-items:flex-start
+
+}
+.flex-1{
+  flex: 1;
+}
+.img-card{
+  width: 150px;
+  height: 150px;
+  border-style: solid;
+  border-color: #3982F6;
+  border-radius: 15px;
+}
+.text-center{
+  text-align: center;
+  margin: auto;
+}
+.dark-background{
+  background-color: #1F2937;
+}
+
+.dark-text{
+  color: #1F2937;
+}
+
+.blue-background{
+  background-color: #3982F6;
+}
+.blue-text{
+  color: background-color
+
+}
+
+.main-text{
+  font-size: 48px;
+  font-weight: 800;
+  color: #F9FAF8;
+}
+
+.scondary-text{
+  font-size: 18px;
+  color: #E5E7EB;
+}
+
+.logo-text{
+  font-size: 24px;
+  color: #F9FAF8;
+}
+
+.inf-text{
+  font-size: 36px;
+  font-weight: 800;
+  color: #1F2937;
+}
+
+.quote-background{
+  background-color: #E5E7EB;
+}
+.quote-text{
+  font-size: 36px;
+  font-weight: lighter;
+  font-style: italic;
+  color: #1F2937;
+}
+
+
+
+
+
+
+
