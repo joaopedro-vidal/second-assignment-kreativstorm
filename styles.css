@@ -169,7 +169,29 @@ button{
 }
 
 
+/* Marcos - Matches */
+.matches-container {
+  padding-left: 15%;
+  padding-right: 15%;
 
+  /* background-color: orange; */
+}
+.container-cards{
+  display: flex;
+  flex-flow: row wrap;
+  
+  /* background-color: powderblue; */
+}
+
+.matches-card {
+  border: solid darkgrey .5px;
+  border-radius: 5px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  min-width: 30%;
+  min-height: 5rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
 
 
 
