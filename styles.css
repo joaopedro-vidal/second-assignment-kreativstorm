@@ -22,7 +22,7 @@ main{
 }
 
 nav{
-  height: 50px;
+
 
 }
 header{
@@ -69,6 +69,12 @@ button{
   padding: 5px 25px;
   border-radius: 10px;
   display: block;
+}
+@media only screen and (max-width: 600px)  {
+  ul{
+    flex-direction: column;
+  }
+  
 }
 .border-white{
   border-style: solid;
