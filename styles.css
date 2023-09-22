@@ -195,9 +195,9 @@ nav{
 .blue-background{
   background-color: #3982F6;
 }
+
 .blue-text{
   color: background-color
-
 }
 
 .main-text{
@@ -268,8 +268,53 @@ hr {
 }
 
 
+/*Players Page*/
 
+.container-main-player{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; 
+  margin: 100px 0;
+}
 
+.container-player{
+  width: 75%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.container-img{
+  text-align: center;
+}
+
+.container-img img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 300px;
+}
+
+.circle {
+  width: 35px;
+  height: 35px;
+  background-color: #3498db; /* Cor de fundo do círculo */
+  border-radius: 50%; /* Torna o elemento um círculo */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px; /* Tamanho do número */
+  color: white; /* Cor do número */
+  margin-right: 10px;
+}
+
+.h2-number-circle{
+  margin: 0;
+  
+}
 
 
 
