@@ -5,28 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header class="header-page">
-        <nav class="nav-bar dark-background scondary-text">
-            <ul>
-                <li class="logo">
-                    <a href="">Header Logo</a>
-                </li>
-                <li>
-                    <a href="matches.html">Matches</a>
-                </li>
-                <li>
-                    <a href="">Players</a>
-                </li>
-                <li>
-                    <a href="">Teams</a>
-                </li>
-            </ul>
-        </nav>
+    <header class="header-page dark-background scondary-text">
+        <a href="../index.html">Top Soccer</a>
+        <section class="nav-bar flex-1">
+            <label class="menu-icon flex-1" for="nav-toggle">
+                <i class="fa fa-bars"></i>
+            </label>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle ">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="pages/matches.html">Matches</a>
+                    </li>
+                    <li>
+                        <a href="pages/players.html">Players</a>
+                    </li>
+                    <li>
+                        <a href="pages/teams.html">Teams</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
     </header>
     <!--Form Sign up-->
-    <form>
+    <main>
+    <form class="quote-background">
         <div class="conteinerSignUp">
             <h1>Register</h1>
             <br>
@@ -44,6 +50,7 @@
             <p>Already have an account? <a href="#">Sign in</a>.</p>
         </div>
     </form>
+</main>
     <footer class="dark-background scondary-text">
         <p>Copyright </p>
     </footer>
