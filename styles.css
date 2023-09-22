@@ -52,9 +52,7 @@ a {
   padding: 14px 16px;
   text-decoration: none;
 }
-img{
-  background: #E5E7EB;
-}
+
 footer{
   margin-top: auto; 
   height: 150px;
@@ -138,18 +136,13 @@ nav{
   border-radius: 15px;
 }
 
+
 .logo{
-  flex: 1;
-  padding-left: 0;
-  display: inline-flex;
-}
-.logo .icon{
-  flex: 1;
+  display: flex;
+  align-items:center;
   
 }
-.logo .icon i{
-  float: right;
-}
+
 
 .main-image{
   width: 100%;
