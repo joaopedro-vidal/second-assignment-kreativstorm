@@ -11,7 +11,7 @@ body{
   height: 100%;
 
 }
-nav,main{
+header,main{
   padding-left: 15%;
   padding-right: 15%;
 
@@ -21,28 +21,26 @@ main{
   padding-bottom: 30px;
 }
 
-nav{
-
-
-}
 header{
   margin: 0;
-  padding: 0;
+  display: flex; 
+  flex-wrap: wrap;
 }
 
  ul {
   list-style-type: none;
   display: flex;
   margin: 0;
-
-
+  
 
 }
 li {
   display: block;
+  padding: auto;
+  
 }
-li a {
-  display:inline-block;
+a {
+  display:block;
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -70,12 +68,63 @@ button{
   border-radius: 10px;
   display: block;
 }
-@media only screen and (max-width: 600px)  {
+@media only screen and (max-width: 740px)  {
   ul{
     flex-direction: column;
   }
+  nav,main{
+    padding-left: 0px;
+    padding-right: 0px;
+  
+  }
+  header
+  {
+    padding-left: 5%;
+    padding-right: 5%;
+  
+  }
+  .menu-icon{
+    display: inline-block;
+  }
+  .nav-bar{
+    flex-direction: column;
+  }
+  nav{
+    display: none;
+  }
+}
+nav{
+  height: 50px;
 
 }
+@media only screen and (min-width: 740px)  {
+  .menu-icon{
+    display: none;
+  }
+}
+.menu-icon{
+  margin: 14px 16px;
+  margin-left: auto; 
+  margin-right: 0;
+
+}
+.nav-toggle{
+  display: none;
+}
+.nav-toggle:checked ~ nav {
+  overflow: visible;
+  height: auto;
+  display: block;
+  
+}
+
+.nav-bar{
+  display: flex;
+  overflow: hidden;
+  justify-content: flex-end;
+
+}
+
 .border-white{
   border-style: solid;
   border-color: #F9FAF8;
@@ -87,6 +136,14 @@ button{
 .logo{
   flex: 1;
   padding-left: 0;
+  display: inline-flex;
+}
+.logo .icon{
+  flex: 1;
+  
+}
+.logo .icon i{
+  float: right;
 }
 
 .main-image{
