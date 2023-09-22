@@ -1,177 +1,167 @@
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   src: url(assets/fonts/Roboto/Roboto-Regular.ttf);
 }
-*{
-  font-family: 'Roboto';
+* {
+  font-family: "Roboto";
 }
-body{
+body {
   margin: 0;
   padding: 0;
   height: 100%;
-
 }
-nav,main{
+nav,
+main {
   padding-left: 15%;
   padding-right: 15%;
-
 }
-main{
+main {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-nav{
-
-
+nav {
 }
-header{
+header {
   margin: 0;
   padding: 0;
 }
 
- ul {
+ul {
   list-style-type: none;
   display: flex;
   margin: 0;
-
-
-
 }
 li {
   display: block;
 }
 li a {
-  display:inline-block;
+  display: inline-block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
-img{
-  background: #E5E7EB;
+img {
+  background: #e5e7eb;
 }
-footer{
+footer {
   position: relative;
   bottom: 0;
   height: 150px;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content:center;
-  align-items:center;
+  justify-content: center;
+  align-items: center;
 }
-p{
+p {
   text-align: justify;
 }
-button{
+button {
   border: none;
   padding: 5px 25px;
   border-radius: 10px;
   display: block;
 }
-@media only screen and (max-width: 600px)  {
-  ul{
+@media only screen and (max-width: 600px) {
+  ul {
     flex-direction: column;
   }
-
 }
-.border-white{
+.border-white {
   border-style: solid;
-  border-color: #F9FAF8;
+  border-color: #f9faf8;
 }
-.rounded{
+.rounded {
   border-radius: 15px;
 }
 
-.logo{
+.logo {
   flex: 1;
   padding-left: 0;
 }
 
-.main-image{
+.main-image {
   width: 100%;
   height: 100%;
   min-width: 350px;
-
 }
-.container{
+.container {
   padding: 20px;
   margin: 10px;
-  justify-content:center;
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
 }
 
-.column{
+.column {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   margin: 10px;
   padding: 10px;
   justify-content: center;
-  align-items:flex-start
-
+  align-items: flex-start;
 }
-.flex-1{
+.flex-1 {
   flex: 1;
 }
-.img-card{
+.img-card {
   width: 150px;
   height: 150px;
   border-style: solid;
-  border-color: #3982F6;
+  border-color: #3982f6;
   border-radius: 15px;
 }
-.text-center{
+.text-center {
   text-align: center;
   margin: auto;
 }
-.dark-background{
-  background-color: #1F2937;
+.dark-background {
+  background-color: #1f2937;
 }
 
-.dark-text{
-  color: #1F2937;
+.dark-text {
+  color: #1f2937;
 }
 
-.blue-background{
-  background-color: #3982F6;
+.blue-background {
+  background-color: #3982f6;
 }
-.blue-text{
-  color: background-color
-
+.blue-text {
+  color: background-color;
 }
 
-.main-text{
+.main-text {
   font-size: 48px;
   font-weight: 800;
-  color: #F9FAF8;
+  color: #f9faf8;
 }
 
-.scondary-text{
+.scondary-text {
   font-size: 18px;
-  color: #E5E7EB;
+  color: #e5e7eb;
 }
 
-.logo-text{
+.logo-text {
   font-size: 24px;
-  color: #F9FAF8;
+  color: #f9faf8;
 }
 
-.inf-text{
+.inf-text {
   font-size: 36px;
   font-weight: 800;
-  color: #1F2937;
+  color: #1f2937;
 }
 
-.quote-background{
-  background-color: #E5E7EB;
+.quote-background {
+  background-color: #e5e7eb;
 }
-.quote-text{
+.quote-text {
   font-size: 36px;
   font-weight: lighter;
   font-style: italic;
-  color: #1F2937;
+  color: #1f2937;
 }
 
 /* CSS Sign_up.html */
@@ -180,7 +170,9 @@ button{
   padding: 16px;
 }
 /* Full-width input fields */
-.email, .psw, .psw-repeat {
+.email,
+.psw,
+.psw-repeat {
   width: 100%;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -196,7 +188,7 @@ hr {
 }
 /* Set a style for the submit button */
 .registerbtn {
-  background-color: #04AA6D;
+  background-color: #04aa6d;
   color: white;
   padding: 16px 20px;
   margin: 8px 0;
@@ -209,23 +201,18 @@ hr {
   text-align: center;
 }
 
-
-/* Marcos - Matches */
+/* Marcos - Matches =====================*/
 .matches-container {
   padding-left: 15%;
   padding-right: 15%;
-
-  /* background-color: orange; */
 }
-.container-cards{
+.cards-container {
   display: flex;
   flex-flow: row wrap;
-  
-  /* background-color: powderblue; */
 }
 
 .matches-card {
-  border: solid darkgrey .5px;
+  border: solid darkgrey 0.5px;
   border-radius: 5px;
   margin-right: 20px;
   margin-bottom: 20px;
@@ -233,7 +220,3 @@ hr {
   min-height: 5rem;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-
-
-
-
