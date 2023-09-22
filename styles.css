@@ -207,17 +207,21 @@ hr {
   flex-flow: row wrap;
 }
 .matches-card {
-  border: solid darkgrey 0.5px;
+  /* border: solid darkgrey 0.5px; */
   border-radius: 5px;
   margin-right: 20px;
   margin-bottom: 20px;
   width: 30%;
   height: auto;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
+  transition: transform 0.3s
+}
+.matches-card:hover{
+  transform: scale(1.03);
 }
 .matches-time {
   display: flex;
