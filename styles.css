@@ -83,12 +83,12 @@ header{
   ul{
     flex-direction: column;
   }
-  nav,main{
+  nav{
     padding-left: 0px;
     padding-right: 0px;
   
   }
-  header
+  header,main
   {
     padding-left: 5%;
     padding-right: 5%;
