@@ -133,7 +133,6 @@ nav {
   overflow: visible;
   height: auto;
   display: block;
-  background-color: #1f2937
 }
 
 .nav-bar {
@@ -290,6 +289,10 @@ hr {
 .signin {
   background-color: #f1f1f1;
   text-align: center;
+}
+
+.textcolor{
+  color: #1f2937;
 }
 
 
