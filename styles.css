@@ -24,12 +24,7 @@ header, main {
   padding-right: 15%;
 }
 
-header {
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  height: 7vh;
-}
+
 
 main {
   padding-top: 30px;
@@ -75,71 +70,69 @@ p {
   border-radius: 10px;
   display: block;
 }
+header{
+  margin: 0;
+  display: flex; 
+  flex-wrap: wrap;
+}
 
-@media only screen and (max-width: 740px) {
-  ul {
+@media only screen and (max-width: 740px)  {
+  ul{
     flex-direction: column;
   }
-
-  nav, main {
+  nav,main{
     padding-left: 0px;
     padding-right: 0px;
+  
   }
-
-  header {
+  header
+  {
     padding-left: 5%;
     padding-right: 5%;
+  
   }
-
-  .menu-icon {
+  .menu-icon{
     display: inline-block;
   }
-
-  .nav-bar {
+  .nav-bar{
     flex-direction: column;
   }
-
-  nav {
+  nav{
     display: none;
   }
 }
-
-nav {
+nav{
   height: 50px;
-}
 
-@media only screen and (min-width: 740px) {
-  .menu-icon {
+}
+@media only screen and (min-width: 740px)  {
+  .menu-icon{
     display: none;
   }
-
-  .containerTables{
-    display:flex;
-  }
-
 }
-
-.menu-icon {
+.menu-icon{
   margin: 14px 16px;
-  margin-left: auto;
+  margin-left: auto; 
   margin-right: 0;
-}
 
-.nav-toggle {
+}
+.nav-toggle{
   display: none;
 }
-
 .nav-toggle:checked ~ nav {
   overflow: visible;
   height: auto;
   display: block;
+  
 }
 
-.nav-bar {
+.nav-bar{
   display: flex;
   overflow: hidden;
   justify-content: flex-end;
+
 }
+
 
 .border-white {
   border-style: solid;
