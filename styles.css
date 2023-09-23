@@ -97,6 +97,9 @@ nav {
   .menu-icon {
     display: none;
   }
+  .containerTables{
+    display:flex;
+  }
 }
 .menu-icon {
   margin: 14px 16px;
@@ -336,4 +339,22 @@ hr {
     width: 100%;
     height: auto;
   }
+  .containerTables{
+    display:grid;
+  }
+}
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+th, td {
+  background-color: #96D4D4;
+}
+.conteinerTeams{
+  padding: 70px;
+}
+.tablecss{
+  width: 100%;
+  height: auto;
+  margin: 10px;
 }
