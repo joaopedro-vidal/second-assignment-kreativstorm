@@ -70,7 +70,7 @@ p {
 }
 
 .button {
-  border: none;
+  border: 1px solid #FFFFFF;
   padding: 5px 25px;
   border-radius: 10px;
   display: block;
