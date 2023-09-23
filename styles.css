@@ -252,14 +252,14 @@ nav {
 
 /* CSS Sign_up.html */
 /* Add padding*/
+
 .conteinerSignUp {
   padding: 16px;
+  display: block;
 }
 
 /* Full-width input fields */
-.email,
-.psw,
-.psw-repeat {
+.email, .psw, .psw-repeat {
   width: 100%;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -276,25 +276,44 @@ hr {
 }
 
 /* Set a style for the submit button */
+
 .registerbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #04aa6d;
   color: white;
-  padding: 16px 20px;
-  margin: 8px 0;
+  padding: 15px 0;
   border: none;
-  width: 100%;
+  border-radius: 30px;
+  width: 15%;
+  margin-left: 40%;
+  margin-bottom: 15px;
+  font-size: 18px;
+  cursor: pointer;
 }
 
 /* text */
 .signin {
+  display:block;
+  justify-content: center;
+  align-items: center;
   background-color: #f1f1f1;
-  text-align: center;
+  padding-top: 10px;
 }
 
-.textcolor{
-  color: #1f2937;
+.signin p{
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
+.signin-text{
+  font-size: 18px;
+  margin-bottom: 10px;
+}
 
 /*Players Page*/
 .main-h1-player {
