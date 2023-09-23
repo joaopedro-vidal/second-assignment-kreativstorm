@@ -2,12 +2,15 @@
   font-family: "Roboto";
   src: url(assets/fonts/Roboto/Roboto-Regular.ttf);
 }
+
 * {
   font-family: "Roboto";
 }
+
 html {
   height: 100%;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -16,20 +19,21 @@ body {
   flex-direction: column;
 }
 
-header,
-main {
+header, main {
   padding-left: 15%;
   padding-right: 15%;
-}
-main {
-  padding-top: 30px;
-  padding-bottom: 30px;
 }
 
 header {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
+  height: 7vh;
+}
+
+main {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 ul {
@@ -37,10 +41,12 @@ ul {
   display: flex;
   margin: 0;
 }
+
 li {
   display: block;
   padding: auto;
 }
+
 a {
   display: block;
   color: white;
@@ -51,22 +57,25 @@ a {
 
 footer {
   margin-top: auto;
-  height: 150px;
+  height: 100px;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 p {
   text-align: justify;
 }
+
 .button {
   border: none;
   padding: 5px 25px;
   border-radius: 10px;
   display: block;
 }
+
 @media only screen and (max-width: 740px) {
   ul {
     flex-direction: column;
@@ -90,9 +99,11 @@ p {
     display: none;
   }
 }
+
 nav {
   height: 50px;
 }
+
 @media only screen and (min-width: 740px) {
   .menu-icon {
     display: none;
@@ -101,14 +112,17 @@ nav {
     display:flex;
   }
 }
+
 .menu-icon {
   margin: 14px 16px;
   margin-left: auto;
   margin-right: 0;
 }
+
 .nav-toggle {
   display: none;
 }
+
 .nav-toggle:checked ~ nav {
   overflow: visible;
   height: auto;
@@ -125,6 +139,7 @@ nav {
   border-style: solid;
   border-color: #f9faf8;
 }
+
 .rounded {
   border-radius: 15px;
 }
@@ -133,6 +148,7 @@ nav {
   display: flex;
   align-items: center;
 }
+
 .logo img{
   margin-top: 6px;
 }
@@ -142,6 +158,7 @@ nav {
   height: 100%;
   min-width: 350px;
 }
+
 .container {
   padding: 20px;
   margin: 10px;
@@ -158,9 +175,11 @@ nav {
   justify-content: center;
   align-items: flex-start;
 }
+
 .flex-1 {
   flex: 1;
 }
+
 .img-card {
   width: 150px;
   height: 150px;
@@ -168,10 +187,12 @@ nav {
   border-color: #3982f6;
   border-radius: 15px;
 }
+
 .text-center {
   text-align: center;
   margin: auto;
 }
+
 .dark-background {
   background-color: #1f2937;
 }
@@ -213,6 +234,7 @@ nav {
 .quote-background {
   background-color: #e5e7eb;
 }
+
 .quote-text {
   font-size: 36px;
   font-weight: lighter;
@@ -225,6 +247,7 @@ nav {
 .conteinerSignUp {
   padding: 16px;
 }
+
 /* Full-width input fields */
 .email,
 .psw,
@@ -237,11 +260,13 @@ nav {
   border: none;
   background: #f1f1f1;
 }
+
 /* Overwrite default styles of hr */
 hr {
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
 }
+
 /* Set a style for the submit button */
 .registerbtn {
   background-color: #04aa6d;
@@ -251,6 +276,7 @@ hr {
   border: none;
   width: 100%;
 }
+
 /* text */
 .signin {
   background-color: #f1f1f1;
@@ -258,6 +284,14 @@ hr {
 }
 
 /*Players Page*/
+
+.main-h1-player {
+  margin-top: 80px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 
 .container-main-player {
   margin: 0;
@@ -273,7 +307,8 @@ hr {
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  gap: 100px;
+  gap: 80px;
+  
 }
 
 .container-img {
@@ -290,27 +325,41 @@ hr {
 .circle {
   width: 35px;
   height: 35px;
-  background-color: #3498db; /* Cor de fundo do círculo */
-  border-radius: 50%; /* Torna o elemento um círculo */
+  background-color: #3982f6; 
+  border-radius: 50%; 
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  font-size: 16px; /* Tamanho do número */
-  color: white; /* Cor do número */
+  font-size: 16px; 
+  color: white; 
   margin-right: 10px;
 }
 
 .h2-number-circle {
   margin: 0;
+  font-size: 18px;
+  color: #1f2937;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 2px;
 }
-.textcolor{
-  color: black;
+
+.h3-img {
+  margin: 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: lighter;
+  font-style: italic;
+  color: #1f2937;
 }
+
+
 /* Marcos - Matches =====================*/
 .cards-container {
   display: flex;
   flex-flow: row wrap;
 }
+
 .matches-card {
   /* border: solid darkgrey 0.5px; */
   border-radius: 5px;
@@ -325,15 +374,18 @@ hr {
   align-items: center;
   transition: transform 0.3s;
 }
+
 .matches-card:hover {
   transform: scale(1.03);
 }
+
 .matches-time {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
 }
+
 @media (max-width: 768px) {
   .matches-card {
     width: 100%;
@@ -343,16 +395,20 @@ hr {
     display:grid;
   }
 }
+
 table, th, td {
   border: 1px solid white;
   border-collapse: collapse;
 }
+
 th, td {
   background-color: #96D4D4;
 }
+
 .conteinerTeams{
   padding: 70px;
 }
+
 .tablecss{
   width: 100%;
   height: auto;
