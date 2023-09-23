@@ -80,21 +80,25 @@ p {
   ul {
     flex-direction: column;
   }
-  nav,
-  main {
+
+  nav, main {
     padding-left: 0px;
     padding-right: 0px;
   }
+
   header {
     padding-left: 5%;
     padding-right: 5%;
   }
+
   .menu-icon {
     display: inline-block;
   }
+
   .nav-bar {
     flex-direction: column;
   }
+
   nav {
     display: none;
   }
@@ -108,9 +112,11 @@ nav {
   .menu-icon {
     display: none;
   }
+
   .containerTables{
     display:flex;
   }
+
 }
 
 .menu-icon {
@@ -286,8 +292,8 @@ hr {
   text-align: center;
 }
 
-/*Players Page*/
 
+/*Players Page*/
 .main-h1-player {
   margin-top: 80px;
   margin-bottom: 0;
@@ -390,13 +396,16 @@ hr {
 }
 
 @media (max-width: 768px) {
+
   .matches-card {
     width: 100%;
     height: auto;
   }
+
   .containerTables{
     display:grid;
   }
+
 }
 
 table, th, td {
