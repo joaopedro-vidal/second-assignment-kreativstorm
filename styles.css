@@ -300,7 +300,9 @@ hr {
 .h2-number-circle {
   margin: 0;
 }
-
+.textcolor{
+  color: black;
+}
 /* Marcos - Matches =====================*/
 .cards-container {
   display: flex;
