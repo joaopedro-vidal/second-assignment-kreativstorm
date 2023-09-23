@@ -65,11 +65,14 @@ p {
 }
 
 .button {
-  border: 1px solid #FFFFFF;
   padding: 5px 25px;
   border-radius: 10px;
   display: block;
 }
+.border-solid{
+  border: 1px solid #FFFFFF;
+}
+
 header{
   margin: 0;
   display: flex; 
@@ -192,7 +195,6 @@ nav{
 
 .text-center {
   text-align: center;
-  margin: auto;
 }
 
 .dark-background {
