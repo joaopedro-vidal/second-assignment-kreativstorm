@@ -8,15 +8,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header class="header-page dark-background scondary-text">
-        <section class="logo">
+        <div class="logo">
             <a href="index.html">TOP SOCCER</a>
             <picture>
                 <img src="assets\logo\logo.png" alt="Logo homepage">
             </picture>
-        </section>
-        <section class="nav-bar flex-1">
+        </div>
+        <div class="nav-bar flex-1">
             <label class="menu-icon flex-1" for="nav-toggle">
                 <i class="fa fa-bars"></i>
             </label>
@@ -37,10 +38,10 @@
                     </li>
                 </ul>
             </nav>
-        </section>
+        </div>
     </header>
-    <main class="scondary-text dark-background">
-        <section class="container ">
+    <main class="">
+        <section class="container scondary-text dark-background">
             <aside class="column flex-1">
                 <h1 class="main-text">ABOUT TOP SOCCER NEWS</h1>
                 <p>Top-Soccer.com is more than an ordinary soccer-dedicated web site.
@@ -54,51 +55,62 @@
                 <img class="main-image" src="assets/Images/home/football.webp" alt="image of three players of soccer">
             </picture>
         </section>
-    </main>
-    <section>
+
+
         <h2 class="text-center">Most viewed</h2>
         <section class="container">
-            <div>
+            <div class="column">
                 <a href="./pages/more-news.html" class="column"></a>
                 <img class="img-card" src="assets/Images/home/PremierLeague.webp" alt="Image logo of Premier League">
                 <h4 class="dark-text text-center">England Premier League</h4>
             </div>
-            <div>
+            <div class="column">
                 <a href="./pages/more-news.html" class="column"></a>
                 <img class="img-card" src="assets/Images/home/LaLiga.webp" alt="Image logo of La liga Spain">
                 <h4 class="dark-text text-center">La liga Spain</h4>
             </div>
-            <div>
+            <div class="column">
                 <a href="./pages/more-news.html" class="column"></a>
                 <img class="img-card" src="assets/Images/home/bundesliga.webp" alt="Image logo of Bundes Liga">
                 <h4 class="dark-text text-center">Germany Bundesliga</h4>
             </div>
-            <div>
+            <div class="column">
                 <a href="./pages/more-news.html" class="column "></a>
                 <img class="img-card" src="assets/Images/home/serie A.jpg" alt="Image logo of Italy Serie A">
                 <h4 class="dark-text text-center">Italy Serie A</h4>
             </div>
-    </section>
-    <section class="quote-background quote-text">
-        <blockquote class="container ">
-            <div class="column ">
-                <h3>Did you know about the first football clubs?</h1>
-                <p>Football clubs have existed since the 15th century, but unorganized and without official status. It
-                    is therefore hard to decide which the first football club was. Some historians suggest that it was
-                    the Foot-Ball Club formed 1824 in Edinburgh....
-                </p>
-            </div>
-        </blockquote>
-    </section>
-    <section class="container blue-background rounded section-signup-homepage">
-        <div class="column flex-1">
-            <p>
-                Read about football news including transfers, results and headlines. Sign up for MailOnline
-                newsletters to get breaking news delivered to your inbox.
-            </p>
-        </div>
-        <a href="./pages/sign_up.html" class="button border-solid blue-background scondary-text column">Sign Up</a>
-    </section>
+        </section>
+        <section class="container quote-background quote-text">
+            <blockquote class="column ">
+                <div >
+                    <h3>Did you know about the first football clubs?</h1>
+                        <p>Football clubs have existed since the 15th century, but unorganized and without official
+                            status. It
+                            is therefore hard to decide which the first football club was. Some historians suggest
+                            that it was
+                            the Foot-Ball Club formed 1824 in Edinburgh....
+                        </p>
+                </div>
+            </blockquote>
+        </section>
+        <section>
+            <aside class="container">
+                <div class="blue-background rounded section-signup-homepage flex">
+                    <div class="column flex-1">
+                        <p>
+                            Read about football news including transfers, results and headlines. Sign up for MailOnline
+                            newsletters to get breaking news delivered to your inbox.
+                        </p>
+                    </div>
+                    <div class="column">
+                        <a href="./pages/sign_up.html" class="button border-solid blue-background scondary-text">Sign
+                            Up</a>
+                    </div>
+                </div>
+
+            </aside>
+        </section>
+    </main>
     <footer class="dark-background scondary-text">
         <p>Copyright ©</p>
     </footer>
