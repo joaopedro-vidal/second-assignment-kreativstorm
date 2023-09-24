@@ -421,11 +421,10 @@ hr {
 }
 
 .matches-card {
-  /* border: solid darkgrey 0.5px; */
   border-radius: 5px;
   margin-right: 20px;
   margin-bottom: 20px;
-  width: 30%;
+  width: 47%;
   height: auto;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: flex;
@@ -439,6 +438,21 @@ hr {
   transform: scale(1.03);
 }
 
+.matches-logos{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 15px;
+}
+.matches-logos img{
+  width: 20px;
+  height: auto;
+}
+
+.matches-teams{
+  width: 60%;
+}
 .matches-time {
   display: flex;
   flex-flow: column nowrap;
