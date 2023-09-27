@@ -62,11 +62,17 @@ p {
   text-align: justify;
 }
 
+.column p{
+  margin-top: 0;
+  line-height: 1.5;
+}
+
 .button {
   padding: 5px 25px;
   border-radius: 10px;
   display: block;
 }
+
 .border-solid{
   border: 1px solid #FFFFFF;
 }
@@ -81,57 +87,64 @@ header{
   ul{
     flex-direction: column;
   }
+
   nav{
     padding-left: 0px;
     padding-right: 0px;
-  
   }
+
   header,main
   {
     padding-left: 5%;
     padding-right: 5%;
-  
   }
+
   .menu-icon{
     display: inline-block;
   }
+
   .nav-bar{
     flex-direction: column;
   }
+
   nav{
     display: none;
   }
-}
-nav{
-  height: 50px;
 
 }
+
+nav{
+  height: 50px;
+}
+
 @media only screen and (min-width: 740px)  {
+  
   .menu-icon{
     display: none;
   }
+
 }
+
 .menu-icon{
   margin: 14px 16px;
   margin-left: auto; 
   margin-right: 0;
-
 }
+
 .nav-toggle{
   display: none;
 }
+
 .nav-toggle:checked ~ nav {
   overflow: visible;
   height: auto;
   display: block;
-  
 }
 
 .nav-bar{
   display: flex;
   overflow: hidden;
   justify-content: flex-end;
-
 }
 
 .border-white {
@@ -139,8 +152,13 @@ nav{
   border-color: #f9faf8;
 }
 
+/*right here   CONTAINTER GRABBED LEFT SIDE*/
+
 .rounded {
   border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
 
 .logo{
@@ -192,9 +210,14 @@ nav{
 }
 
 .text-center {
-  text-align: center;
+ text-align: center;
  margin-left: auto;
  margin-right: auto;
+ font-size: 18px;
+}
+
+.h2-most-viewed{
+  font-size: 32px;
 }
 
 .dark-background {
@@ -240,10 +263,12 @@ nav{
 }
 
 .quote-text {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: lighter;
   font-style: italic;
   color: #1f2937;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 /* CSS Sign_up.html */
