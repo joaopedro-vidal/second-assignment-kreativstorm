@@ -19,15 +19,17 @@ body {
   flex-direction: column;
 }
 
-header, main {
+section {
+  margin: 0;
+  padding: 0;
+}
+
+header {
   padding-left: 15%;
   padding-right: 15%;
 }
 
-.main {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
+
 
 ul {
   list-style-type: none;
@@ -62,89 +64,98 @@ p {
   text-align: justify;
 }
 
-.column p{
-  margin-top: 0;
-  line-height: 1.5;
-}
-
 .button {
   padding: 5px 25px;
   border-radius: 10px;
   display: block;
 }
 
-.border-solid{
+.border-solid {
   border: 1px solid #FFFFFF;
 }
 
-header{
+header {
   margin: 0;
-  display: flex; 
+  display: flex;
   flex-wrap: wrap;
 }
 
-@media only screen and (max-width: 740px)  {
-  ul{
+@media only screen and (max-width: 800px) {
+  ul {
     flex-direction: column;
   }
 
-  nav{
+  nav {
     padding-left: 0px;
     padding-right: 0px;
+
   }
 
-  header,main
-  {
+  header,
+  section,
+  section.container,
+  aside.container,
+  blockquote.container {
     padding-left: 5%;
     padding-right: 5%;
+
   }
 
-  .menu-icon{
+  .menu-icon {
     display: inline-block;
   }
 
-  .nav-bar{
+  .nav-bar {
     flex-direction: column;
   }
 
-  nav{
+  nav {
     display: none;
   }
 
+  .flex {
+    flex-direction: column;
+  }
+
+  section.quote-text {
+    font-size: 20px;
+  }
 }
 
-nav{
+nav {
   height: 50px;
+
 }
 
-@media only screen and (min-width: 740px)  {
-  
-  .menu-icon{
+@media only screen and (min-width: 800px) {
+  .menu-icon {
     display: none;
   }
-
 }
 
-.menu-icon{
+.menu-icon {
   margin: 14px 16px;
-  margin-left: auto; 
+  margin-left: auto;
   margin-right: 0;
+
 }
 
-.nav-toggle{
+.nav-toggle {
   display: none;
 }
 
-.nav-toggle:checked ~ nav {
+.nav-toggle:checked~nav {
   overflow: visible;
   height: auto;
   display: block;
+
 }
 
-.nav-bar{
+.nav-bar {
   display: flex;
   overflow: hidden;
   justify-content: flex-end;
+
 }
 
 .border-white {
@@ -152,22 +163,17 @@ nav{
   border-color: #f9faf8;
 }
 
-/*right here   CONTAINTER GRABBED LEFT SIDE*/
-
 .rounded {
   border-radius: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
 }
 
-.logo{
+.logo {
   display: flex;
-  align-items:flex-start;
-  
+  align-items: flex-start;
+
 }
 
-.logo img{
+.logo img {
   margin-top: 6px;
   width: 40px;
   height: 40px;
@@ -181,11 +187,18 @@ nav{
 
 .container {
   padding: 20px;
-  margin: 10px;
+  padding-left: 15%;
+  padding-right: 15%;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  gap: 150px;
+}
+
+.flex {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+
 }
 
 .column {
@@ -210,14 +223,9 @@ nav{
 }
 
 .text-center {
- text-align: center;
- margin-left: auto;
- margin-right: auto;
- font-size: 18px;
-}
-
-.h2-most-viewed{
-  font-size: 32px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .dark-background {
@@ -263,12 +271,10 @@ nav{
 }
 
 .quote-text {
-  font-size: 32px;
+  font-size: 2vw;
   font-weight: lighter;
   font-style: italic;
   color: #1f2937;
-  padding-left: 15%;
-  padding-right: 15%;
 }
 
 /* CSS Sign_up.html */
@@ -280,7 +286,9 @@ nav{
 }
 
 /* Full-width input fields */
-.email, .psw, .psw-repeat {
+.email,
+.psw,
+.psw-repeat {
   width: 100%;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -316,14 +324,14 @@ hr {
 
 /* text */
 .signin {
-  display:block;
+  display: block;
   justify-content: center;
   align-items: center;
   background-color: #f1f1f1;
   padding-top: 10px;
 }
 
-.signin p{
+.signin p {
   text-align: left;
   font-size: 18px;
   font-weight: bold;
@@ -331,7 +339,7 @@ hr {
   padding-left: 10px;
 }
 
-.signin-text{
+.signin-text {
   font-size: 18px;
   margin-bottom: 10px;
 }
@@ -360,7 +368,7 @@ hr {
   display: flex;
   flex-wrap: wrap;
   gap: 80px;
-  
+
 }
 
 .container-img {
@@ -377,13 +385,13 @@ hr {
 .circle {
   width: 35px;
   height: 35px;
-  background-color: #3982f6; 
-  border-radius: 50%; 
+  background-color: #3982f6;
+  border-radius: 50%;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  font-size: 16px; 
-  color: white; 
+  font-size: 16px;
+  color: white;
   margin-right: 10px;
 }
 
@@ -413,11 +421,10 @@ hr {
 }
 
 .matches-card {
-  /* border: solid darkgrey 0.5px; */
   border-radius: 5px;
   margin-right: 20px;
   margin-bottom: 20px;
-  width: 30%;
+  width: 47%;
   height: auto;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: flex;
@@ -431,6 +438,21 @@ hr {
   transform: scale(1.03);
 }
 
+.matches-logos{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 15px;
+}
+.matches-logos img{
+  width: 20px;
+  height: auto;
+}
+
+.matches-teams{
+  width: 60%;
+}
 .matches-time {
   display: flex;
   flex-flow: column nowrap;
@@ -445,26 +467,29 @@ hr {
     height: auto;
   }
 
-  .containerTables{
-    display:grid;
+  .containerTables {
+    display: grid;
   }
 
 }
 
-table, th, td {
+table,
+th,
+td {
   border: 1px solid white;
   border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
   background-color: #96D4D4;
 }
 
-.conteinerTeams{
+.conteinerTeams {
   padding: 70px;
 }
 
-.tablecss{
+.tablecss {
   width: 100%;
   height: auto;
   margin: 10px;
