@@ -1,0 +1,249 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(assets/fonts/Roboto/Roboto-Regular.ttf);
+  }
+
+* {  
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+}
+
+:root {
+    --background--dark: #1F2937;
+    --hero--maintext: 48px;
+    --hero--secondary--text: 18px;
+    --hero--secondarytext--color: #e5e7eb;
+    --header--text: 24px;
+    --header--textcolor: #F9FAF8;
+    --button--color: #3882f6;
+    --information--header--text: 36px;
+    --information--header--color: #1f2937;
+    --logo--header--text: 24px;
+    --quote--background: #E5E7EB;
+    --quote--text: 36px;
+    --quote--text--color: #1f2937;
+    --classic--white: #FFFFFF;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.header-page {
+    display: flex;
+    justify-content: space-between; /* Alinhe os elementos no início e no final do header */
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    max-width: 100%;
+    height: 50px;
+    padding: 10px 100px; /*checar issso*/
+    background-color: var(--background--dark);
+    font-size: var(--logo--header--text); 
+}
+
+.logo img {
+    width: 20px;
+    height: 20px;
+}
+
+.menu-icon, #nav-toggle {
+    display: none;
+}
+
+.header-page nav {
+    flex: 1; /* Ocupa todo o espaço disponível entre a logo e a ul */
+    text-align: right; /* Alinhe o conteúdo da ul à direita */
+}
+
+.header-page ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 50px;
+    list-style-type: none;
+    font-size: var(--hero--secondary--text);
+}
+
+.header-page a {
+    text-decoration: none;
+    color: var(--header--textcolor);
+}
+
+.container__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: var(--background--dark);
+    padding: 100px 0;
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto;
+    gap: 50px;
+}
+
+.container__aside{
+    flex-direction: column;
+    flex: 1;
+    padding-left: 150px;
+    padding-top: 60px;
+    text-align: left;
+}
+
+.container__aside p{
+    max-width: 500px;
+    padding-top: 10px;
+    font-size: var(--hero--secondary--text);
+    color: var(--classic--white);
+}
+
+.button__header {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--classic--white);
+    border: 1px solid var(--classic--white);
+    background-color: var(--button--color);
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 20%;
+    margin-top: 15px;
+}
+
+.container__picture__header {
+    display: flex;
+    max-width: 50%;
+    padding-right: 150px;
+}
+
+.main-text {
+    color: var(--header--textcolor);
+    font-size: var(--hero--maintext);
+    text-align: left;
+    max-width: 500px;
+}
+
+.main-image { /*rever isto*/
+    max-width: 100%;
+    height: auto;
+    /*min-width: 350px;*/
+    padding-right: 150px;
+}
+
+.container__figures {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    padding-bottom: 100px;
+}
+
+.h2-most-viewed {
+    font-size: var(--information--header--text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 70px;
+
+}
+
+.img-card {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  border-style: solid;
+  border-color: #3982f6;
+  border-radius: 15px;
+  object-fit: scale-down;
+}
+
+.column__figures figcaption {
+    text-align: center;
+    font-size: var(--hero--secondary--text);
+    color: var(--information--header--color);
+}
+
+.container__quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-color: var(--quote--background);
+    padding: 100px 0;
+}
+
+.container__quote h3 {
+    font-size: var(--quote--text);
+    font-style: italic;
+    font-weight: 300;
+    color: var(--quote--text--color);
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.container__quote p {
+    font-size: var(--hero--secondary--text);
+    color: var(--quote--text--color);
+    font-style: italic;
+    font-weight: 300;
+    text-align: justify;
+    width: 50%;
+    margin: auto;
+}
+
+.container__signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 50px 20px;
+    width:60%;
+    margin: 100px auto;
+    background-color: var(--button--color);
+    border-radius: 20px;
+    color: var(--classic--white);
+}
+
+.container__signup h4 {
+    font-size: var(--logo--header--text);
+    padding-bottom: 10px;
+}
+
+.container__signup p {
+    font-size: var(--hero--secondary--text);
+    text-align: justify;
+}
+
+.button__signup {
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    color: var(--classic--white);
+    border: 1px solid var(--classic--white);
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+
+footer  {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background--dark);
+    color: var(--header--textcolor);
+    font-size: var(--hero--secondary--text);
+}
+
+
+
+
+
