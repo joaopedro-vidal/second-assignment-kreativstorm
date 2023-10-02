@@ -361,6 +361,82 @@ footer  {
     border-top-left-radius: 20px;
   }
 
+  /*Players Page*/
+.main-h1-player {
+    margin-top: 80px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .container-main-player {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+  }
+  
+  .container-player {
+    width: 75%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+  
+  }
+  
+  .container-img {
+    text-align: center;
+  }
+  
+  .container-img img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 300px;
+    cursor: pointer;
+  }
+
+  .container-img img:hover {
+    transform: scale(1.2) translate(15px, -10px); /* Aumenta o tamanho em 10% e desloca -10px no eixo Y */
+    transition: 1s;
+    color: var(--background--dark);
+  }
+  
+  .circle {
+    width: 35px;
+    height: 35px;
+    background-color: #3982f6;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+    margin-right: 10px;
+  }
+  
+  .h2-number-circle {
+    margin: 0;
+    font-size: 18px;
+    color: #1f2937;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 2px;
+  }
+  
+  .h3-img {
+    margin: 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1f2937;
+  }
+
 
 @media (max-width: 1025px) {
 
