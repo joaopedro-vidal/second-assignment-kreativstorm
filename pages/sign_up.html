@@ -3,73 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
-    <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style-index.css">
+    <title>SignUp Page</title>
 </head>
 <body>
-    <header class="header-page dark-background scondary-text">
-        <section class="logo">
-            <a href="../index.html">TOP SOCCER</a>
-            <img src="../assets/logo/logo.png" alt="Logo homepage">
-        </section>
-        <section class="nav-bar flex-1">
-            <label class="menu-icon flex-1" for="nav-toggle">
+    <header class="container__header">
+        <div class="logo">
+            <a href="../index.html">TOP SOCCER</a> 
+            <picture>
+                <img src="../assets\logo\logo.png" alt="Logo homepage">
+            </picture>
+        </div>
+        <div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label class="menu-icon" for="nav-toggle">
                 <i class="fa fa-bars"></i>
             </label>
-            <input type="checkbox" id="nav-toggle" class="nav-toggle ">
             <nav>
                 <ul>
                     <li>
-                        <a href="./more-news.html">News</a>
+                        <a href="more-news.html">News</a>
                     </li>
                     <li>
-                        <a href="./matches.html">Matches</a>
+                        <a href="matches.html">Matches</a>
                     </li>
                     <li>
-                        <a href="./players.html">Players</a>
+                        <a href="players.html">Players</a>
                     </li>
                     <li>
-                        <a href="./teams.html">Teams</a>
+                        <a href="teams.html">Teams</a>
                     </li>
                 </ul>
             </nav>
-        </section>
+        </div>
     </header>
-    <main class="container">
-    <form class="quote-background">
-        <section class="conteinerSignUp">
-            <h1>
-                Register
-            </h1>
-            <br>
-            <hr>
-            <label>
-                <b>Email</b>
-            </label>
-            <input type="text" placeholder="Enter Email"  class="email" required>
-            <label>
-                <b>Password</b>
-            </label>
-            <input type="password" placeholder="Enter Password" class="psw" required>
-            <label>
-                <b>Repeat Password</b>
-            </label>
-            <input type="password" placeholder="Repeat Password" class="psw-repeat" required>
-            <hr>
+    <main>
+        <section class="container__form">
+            <form>
+                <fieldset>
+                    <legend>Fill out the form to register</legend>
+                    <div class="form__textspots">
+                        <label for="email">
+                            Type your best e-mail:
+                        </label>
+                        <input type="text" id="email" name="email_user" placeholder="Type your email" required/>
+                    </div>
+                    <div class="form__textspots">
+                        <label for="password">
+                            Set your password:
+                        </label>
+                        <input type="text" id="password" name="passowrd_user" placeholder="Password" required/>
+                    </div>
+                    <div class="form__textspots">
+                        <label for="password_again">
+                            Repeat your password:
+                        </label>
+                        <input type="text" id="password_again" name="passowrd_user" placeholder="Password" required/>
+                    </div>
+                </fieldset>
+                <button type="submit">Submit</button>
+            </form>
         </section>
-        <section>
-            <button type="submit" class="registerbtn">Register</button>
-        </section>
-        <section class="signin">
-            <p>Already have an account?</p>
-            <a href="#" class="registerbtn signin-text">Sign in</a>
-        </section>
-    </form>
-</main>
-    <footer class="dark-background scondary-text">
+    </main>
+    <footer>
         <p>Copyright ©</p>
     </footer>
 </body>
-
 </html>
