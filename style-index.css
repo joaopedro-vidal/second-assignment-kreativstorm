@@ -379,12 +379,13 @@ footer  {
   }
   
   .container-player {
-    width: 75%;
+    width: 100%;
+    padding: 0 15%;
     height: 100%;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    gap: 100px;
+    gap: 80px
   
   }
   
@@ -398,6 +399,7 @@ footer  {
     object-fit: cover;
     border-radius: 300px;
     cursor: pointer;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1);
   }
 
   .container-img img:hover {
@@ -436,6 +438,70 @@ footer  {
     font-style: italic;
     color: #1f2937;
   }
+
+/*TEAMS PAGE*/
+
+.container__teams {
+    text-align: center;
+    width: 100%;
+    margin: 100px auto;
+}
+
+.container__teams blockquote {
+    border: 1px solid var(--background--dark);
+    border-radius: 20px;
+    padding: 50px 0;
+    max-width: 50%;
+    margin: auto;
+    background-color: #f1f7fe;
+}
+
+.container__teams h2 {
+    font-size: 26px;
+    font-weight: lighter;
+    font-style: italic;
+    padding-bottom: 15px;
+}
+
+.teams__blockquote__p {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: var(--hero--secondary--text);
+    text-align: center;
+    padding: 0 15px;
+}
+
+.aside__teams {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.aside__teams div {
+    border: 1px solid var(--background--dark);
+    border-radius: 20px;
+    padding: 50px;
+    margin: 50px;
+    gap: 50px;
+    background-color: #c5def9;
+}
+
+.aside__teams h4 {
+    font-size: var(--hero--secondary--text);
+    padding-bottom: 10px;
+}
+
+.aside__teams p {
+    text-align: left;
+    padding: 10px;
+    font-size: var(--hero--secondary--text);
+    border-top: 2px solid var(--background--dark);
+}
+
 
 
 @media (max-width: 1025px) {
@@ -488,7 +554,7 @@ footer  {
         flex-direction: column;
         background-color: var(--background--dark);
         position: absolute;
-        top: 50px; 
+        top: 15px; 
         right: 0;
         width: 150px;  
     }
@@ -529,6 +595,10 @@ footer  {
 
     .container__signup {
         padding: 20px 30px;
+    }
+
+    .main-h1-player {
+        text-align: center;
     }
 }
 

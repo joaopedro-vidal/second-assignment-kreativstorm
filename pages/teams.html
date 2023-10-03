@@ -1,104 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teams</title>
-    <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style-index.css">
+    <title>SignUp Page</title>
 </head>
 
 <body>
-    <header class="header-page dark-background scondary-text">
-        <section class="logo">
-            <a href="../index.html">TOP SOCCER</a>
-            <img src="../assets/logo/logo.png" alt="Logo homepage">
-        </section>
-        <section class="nav-bar flex-1">
-            <label class="menu-icon flex-1" for="nav-toggle">
+    <header class="container__header">
+        <div class="logo">
+            <a href="../index.html">TOP SOCCER</a> 
+            <picture>
+                <img src="../assets\logo\logo.png" alt="Logo homepage">
+            </picture>
+        </div>
+        <div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label class="menu-icon" for="nav-toggle">
                 <i class="fa fa-bars"></i>
             </label>
-            <input type="checkbox" id="nav-toggle" class="nav-toggle ">
             <nav>
                 <ul>
                     <li>
-                        <a href="./more-news.html">News</a>
+                        <a href="more-news.html">News</a>
                     </li>
                     <li>
-                        <a href="./matches.html">Matches</a>
+                        <a href="matches.html">Matches</a>
                     </li>
                     <li>
-                        <a href="./players.html">Players</a>
+                        <a href="players.html">Players</a>
                     </li>
                     <li>
-                        <a href="./teams.html">Teams</a>
+                        <a href="teams.html">Teams</a>
                     </li>
                 </ul>
             </nav>
-        </section>
-    </header>
-    <section class="conteinerTeams">
-        <h2>Football clubs</h2>
-        <p>
-            An overview of some of the most merited football clubs in the history of the game. Other teams of historical
-            significance, but less prominent in modern days are listed below.
-        </p>
-        <div class="containerTables">
-            <table class="tablecss">
-                <tr>
-                    <th>Germany</th>
-                </tr>
-                <tr>
-                    <td>FC Bayern Munich</td>
-                </tr>
-                <tr>
-                    <td>Borussia Dortmund</td>
-                </tr>
-                <tr>
-                    <td>Borussia Mönchengladbach</td>
-                </tr>
-                <tr>
-                    <td>Hamburger SV</td>
-                </tr>
-                <tr>
-                    <td>FC Kaiserslautern</td>
-                </tr>
-            </table>
-            <table class="tablecss">
-                <tr>
-                    <th>France</th>
-                </tr>
-                <tr>
-                    <td>FC Girondins de Bordeaux</td>
-                </tr>
-                <tr>
-                    <td>AC Monaco FC</td>
-                </tr>
-                <tr>
-                    <td>FC Nantes</td>
-                </tr>
-                <tr>
-                    <td>OGC Nice</td>
-                </tr>
-            </table>
-            <table class="tablecss">
-                <tr>
-                    <th>Croatia</th>
-                </tr>
-                <tr>
-                    <td>GNK Dinamo Zagreb</td>
-                </tr>
-                <tr>
-                    <td>HNK Hajduk Split</td>
-                </tr>
-                <tr>
-                    <td>HNK Rijeka</td>
-                </tr>
-            </table>
         </div>
-    </section>
-    <footer class="dark-background scondary-text">
+    </header>
+    <main>
+        <section class="container__teams">
+            <blockquote>
+                <h2>Football clubs</h2>
+                <p class="teams__blockquote__p"> 
+                    An overview of some of the most merited football clubs in the history of the game. Other teams of historical
+                    significance, but less prominent in modern days are listed below.
+                </p>
+            </blockquote>
+            <aside class="aside__teams">
+                <div>
+                    <h4>Germany</h4>
+                    <p>FC Bayern Munich</p>
+                    <p>Borussia Dortmund</p>
+                    <p>Borussia Mönchengladbach</p>
+                    <p>Hamburger SV</p>
+                    <p>FC Kaiserslautern</p>
+                </div>
+                <div>
+                    <h4>France</h4>
+                    <p>FC Girondins de Bordeaux</p>
+                    <p>AC Monaco FC</p>
+                    <p>FC Nantes</p>
+                    <p>OGC Nice</p>
+                    <p>Paris Saint-Germain</p>
+                </div>
+                <div>
+                    <h4>Croatia</h4>
+                    <p>GNK Dinamo Zagreb</p>
+                    <p>HNK Hajduk Split</p>
+                    <p>HNK Rijeka</p>
+                    <p>Gorica</p>
+                    <p>Slaven Belupo</p>
+                </div>
+            </aside>
+        </section>
+    <footer>
         <p>Copyright ©</p>
     </footer>
 </body>
