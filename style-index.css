@@ -502,6 +502,70 @@ footer  {
     border-top: 2px solid var(--background--dark);
 }
 
+/* MATCHES PAGE */
+
+.container__matches {
+  margin: 80px;
+  padding-left: 15%;
+  padding-right: 15%;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.matches__h1{
+    text-align: left;
+    padding: 50px 0;
+}
+
+.matches-card {
+  border-radius: 5px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: 47%;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  transition: transform 0.3s;
+  padding: 2px;
+}
+
+.matches-card:hover {
+  transform: scale(1.03);
+}
+
+.matches-logos {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 15px;
+}
+
+.matches-logos img {
+  width: 20px;
+  height: auto;
+}
+
+.matches-teams {
+  width: 60%;
+}
+
+.matches-time {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
 
 
 @media (max-width: 1025px) {

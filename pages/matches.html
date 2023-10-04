@@ -1,342 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Matches</title>
-  <link rel="stylesheet" href="../styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style-index.css">
+    <title>SignUp Page</title>
 </head>
 
 <body>
-  <header class="header-page dark-background scondary-text">
-    <section class="logo">
-      <a href="../index.html">TOP SOCCER</a>
-      <img src="../assets/logo/logo.png" alt="Logo homepage">
-    </section>
-    <section class="nav-bar flex-1">
-      <label class="menu-icon flex-1" for="nav-toggle">
-        <i class="fa fa-bars"></i>
-      </label>
-      <input type="checkbox" id="nav-toggle" class="nav-toggle ">
-      <nav>
-        <ul>
-          <li>
-            <a href="./more-news.html">News</a>
-          </li>
-          <li>
-            <a href="./matches.html">Matches</a>
-          </li>
-          <li>
-            <a href="./players.html">Players</a>
-          </li>
-          <li>
-            <a href="./teams.html">Teams</a>
-          </li>
-        </ul>
-      </nav>
-    </section>
-  </header>
-  <main class="container">
-    <div>
-        <section>
+    <header class="container__header">
+        <div class="logo">
+            <a href="../index.html">TOP SOCCER</a> 
+            <picture>
+                <img src="../assets\logo\logo.png" alt="Logo homepage">
+            </picture>
+        </div>
+        <div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label class="menu-icon" for="nav-toggle">
+                <i class="fa fa-bars"></i>
+            </label>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="more-news.html">News</a>
+                    </li>
+                    <li>
+                        <a href="matches.html">Matches</a>
+                    </li>
+                    <li>
+                        <a href="players.html">Players</a>
+                    </li>
+                    <li>
+                        <a href="teams.html">Teams</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+      <section class="container__matches"> 
+        <div class="matches__h1">
           <h1>Today's Matches</h1>
-        </section>
-        <section class="cards-container">
-          <article class="matches-card">
-            <section class="matches-logos">
-                <img src="../assets/Images/teams/galatasaray.jpg" alt="Galatasary Logo">
-                <img src="../assets/Images/teams/copenhagan.png" alt="FC Copenhagan Logo">
-            </section>
-            <section class="matches-teams">
-              <p>Galatasary</p>
-              <p>FC Copenhagan</p>
-            </section>
-            <section class="matches-scores">
-              <p>1</p>
-              <p>0</p>
-            </section>
-            <section class="matches-time">
-              <p>23'</p>
-            </section>
-          </article>
-          <article class="matches-card">
-            <section class="matches-logos">
-                <img src="../assets/Images/teams/real-madrid.png" alt="Read Madrid Logo">
-                <img src="../assets/Images/teams/fc-union-berlin.png" alt="FC Union Berlin Logo">
-            </section>
-            <section class="matches-teams">
-              <p>Real Madrid</p>
-              <p>FC Union Berlin</p>
-            </section>
-            <section class="matches-scores">
-              <p>0</p>
-              <p>0</p>
-            </section>
-            <section class="matches-time">
-              <p>23'</p>
-            </section>
-          </article>
-          <article class="matches-card">
-            <section class="matches-logos">
-                <img src="../assets/Images/teams/fc-bayern-munich.png" alt="FC Bayern Munich Logo">
-                <img src="../assets/Images/teams/manchester_united.gif" alt="Manchester United Logo">
-            </section>
-            <section class="matches-teams">
-              <p>Bayern Munich</p>
-              <p>Manchester United</p>
-            </section>
-            <section class="matches-scores">
-              <p>0</p>
-              <p>0</p>
-            </section>
-            <section class="matches-time">
-              <p>24'</p>
-            </section>
-          </article>
-          <article class="matches-card">
-            <section class="matches-logos">
-                <img src="../assets/Images/teams/sporting braga.jpg" alt="sporting Braga Logo">
-                <img src="../assets/Images/teams/napoli.png" alt="Napoli Logo">
-            </section>
-            <section class="matches-teams">
-              <p>Braga</p>
-              <p>Napoli</p>
-            </section>
-            <section class="matches-scores">
-              <p>0</p>
-              <p>0</p>
-            </section>
-            <section class="matches-time">
-              <p>25'</p>
-            </section>
-          </article>
-          <article class="matches-card">
-            <section class="matches-logos">
-                <img src="../assets/Images/teams/arsenal.jpg" alt="Arsenal Logo">
-                <img src="../assets/Images/teams/psv_eindhoven.jpg" alt="PSV Eindhoven Logo">
-            </section>
-            <section class="matches-teams">
-              <p>Arsenal</p>
-              <p>PSV</p>
-            </section>
-            <section class="matches-scores">
-              <p>0</p>
-              <p>1</p>
-            </section>
-            <section class="matches-time">
-              <p>49'</p>
-            </section>
-          </article>
-          <article class="matches-card">
-            <section class="matches-logos">
-                <img src="../assets/Images/teams/sevilla fc.gif" alt="Sevilla FC Logo">
-                <img src="../assets/Images/teams/lens.gif" alt="Lens Logo">
-            </section>
-            <section class="matches-teams">
-              <p>Sevilla</p>
-              <p>Lens</p>
-            </section>
-            <section class="matches-scores">
-              <p>0</p>
-              <p>0</p>
-            </section>
-            <section class="matches-time">
-              <p>52'</p>
-            </section>
-          </article>
-          <article class="matches-card">
-            <section class="matches-logos">
-                <img src="../assets/Images/teams/benfica.jpg" alt="Benfica Logo">
-                <img src="../assets/Images/teams/red bull salzburg.jpg" alt="RB Salzburg Logo">
-            </section>
-            <section class="matches-teams">
-              <p>Benefica</p>
-              <p>RB Seisburg</p>
-            </section>
-            <section class="matches-scores">
-              <p>0</p>
-              <p>0</p>
-            </section>
-            <section class="matches-time">
-              <p>56'</p>
-            </section>
-          </article>
-          <article class="matches-card">
-            <section class="matches-logos">
-                <img src="../assets/Images/teams/real sociedad.gif" alt="Real Sociedad Logo">
-                <img src="../assets/Images/teams/internazionale-milan.png" alt="Inter Milan Logo">
-            </section>
-            <section class="matches-teams">
-              <p>Real Sociedad</p>
-              <p>Inter</p>
-            </section>
-            <section class="matches-scores">
-              <p>0</p>
-              <p>0</p>
-            </section>
-            <section class="matches-time">
-              <p>57'</p>
-            </section>
-          </section>
-        </article>
-        <aside>
-          <p>Go to standings</p>
+        </div>
+        <aside class="cards-container"> 
+              <div class="matches-card">
+                  <picture class="matches-logos">
+                      <img src="../assets/Images/teams/galatasaray.jpg" alt="Galatasary Logo">
+                      <img src="../assets/Images/teams/copenhagan.png" alt="FC Copenhagan Logo">
+                  </picture>
+                  <blockquote class="matches-teams">
+                      <p>Galatasary</p>
+                      <p>FC Copenhagan</p>
+                  </blockquote>
+                  <blockquote class="matches-scores">
+                      <p>1</p>
+                      <p>0</p>
+                  </blockquote>
+                  <blockquote class="matches-time">
+                      <p>23'</p>
+                  </blockquote>
+              </div>
+              <div class="matches-card">
+                  <picture class="matches-logos">
+                      <img src="../assets/Images/teams/real-madrid.png" alt="Read Madrid Logo">
+                      <img src="../assets/Images/teams/fc-union-berlin.png" alt="FC Union Berlin Logo">
+                  </picture>
+                  <blockquote class="matches-teams">
+                      <p>Real Madrid</p>
+                      <p>FC Union Berlin</p>
+                  </blockquote>
+                  <blockquote class="matches-scores">
+                      <p>0</p>
+                      <p>0</p>
+                  </blockquote>
+                  <blockquote class="matches-time">
+                      <p>23'</p>
+                  </blockquote>
+              </div>
+              <div class="matches-card">
+                  <picture class="matches-logos">
+                      <img src="../assets/Images/teams/fc-bayern-munich.png" alt="FC Bayern Munich Logo">
+                      <img src="../assets/Images/teams/manchester_united.gif" alt="Manchester United Logo">
+                  </picture>
+                  <blockquote class="matches-teams">
+                      <p>Bayern Munich</p>
+                      <p>Manchester United</p>
+                  </blockquote>
+                  <blockquote class="matches-scores">
+                      <p>0</p>
+                      <p>0</p>
+                  </blockquote>
+                  <blockquote class="matches-time">
+                      <p>24'</p>
+                  </blockquote>
+              </div>
+              <div class="matches-card">
+                  <picture class="matches-logos">
+                      <img src="../assets/Images/teams/sporting braga.jpg" alt="sporting Braga Logo">
+                      <img src="../assets/Images/teams/napoli.png" alt="Napoli Logo">
+                  </picture>
+                  <blockquote class="matches-teams">
+                      <p>Braga</p>
+                      <p>Napoli</p>
+                  </blockquote>
+                  <blockquote class="matches-scores">
+                      <p>0</p>
+                      <p>0</p>
+                  </blockquote>
+                  <blockquote class="matches-time">
+                      <p>25'</p>
+                  </blockquote>
+              </div>
+              <div class="matches-card">
+                  <picture class="matches-logos">
+                      <img src="../assets/Images/teams/arsenal.jpg" alt="Arsenal Logo">
+                      <img src="../assets/Images/teams/psv_eindhoven.jpg" alt="PSV Eindhoven Logo">
+                  </picture>
+                  <blockquote class="matches-teams">
+                      <p>Arsenal</p>
+                      <p>PSV</p>
+                  </blockquote>
+                  <blockquote class="matches-scores">
+                      <p>0</p>
+                      <p>1</p>
+                  </blockquote>
+                  <blockquote class="matches-time">
+                      <p>49'</p>
+                  </blockquote>
+              </div>
+              <div class="matches-card">
+                  <picture class="matches-logos">
+                      <img src="../assets/Images/teams/sevilla fc.gif" alt="Sevilla FC Logo">
+                      <img src="../assets/Images/teams/lens.gif" alt="Lens Logo">
+                  </picture>
+                  <blockquote class="matches-teams">
+                      <p>Sevilla</p>
+                      <p>Lens</p>
+                  </blockquote>
+                  <blockquote class="matches-scores">
+                      <p>0</p>
+                      <p>0</p>
+                  </blockquote>
+                  <blockquote class="matches-time">
+                      <p>52'</p>
+                  </blockquote>
+              </div>
+              <div class="matches-card">
+                  <picture class="matches-logos">
+                      <img src="../assets/Images/teams/benfica.jpg" alt="Benfica Logo">
+                      <img src="../assets/Images/teams/red bull salzburg.jpg" alt="RB Salzburg Logo">
+                  </picture>
+                  <blockquote class="matches-teams">
+                      <p>Benefica</p>
+                      <p>RB Seisburg</p>
+                  </blockquote>
+                  <blockquote class="matches-scores">
+                      <p>0</p>
+                      <p>0</p>
+                  </blockquote>
+                  <blockquote class="matches-time">
+                      <p>56'</p>
+                  </blockquote>
+              </div>
+              <div class="matches-card">
+                  <picture class="matches-logos">
+                      <img src="../assets/Images/teams/real sociedad.gif" alt="Real Sociedad Logo">
+                      <img src="../assets/Images/teams/internazionale-milan.png" alt="Inter Milan Logo">
+                  </picture>
+                  <blockquote class="matches-teams">
+                      <p>Real Sociedad</p>
+                      <p>Inter</p>
+                  </blockquote>
+                  <blockquote class="matches-scores">
+                      <p>0</p>
+                      <p>0</p>
+                  </blockquote>
+                  <blockquote class="matches-time">
+                      <p>57'</p>
+                  </blockquote>
+              </div>
+              <div>
+                <p>Go to standings</p>
+              </div>
+        </aside>    
+        <div  class="matches__h1">
+          <h1>Yesterday's Matches</h1>
+        </div>
+        <aside class="cards-container">
+              <div class="matches-card">
+                  <picture class="matches-logos">
+                      <img src="../assets/Images/teams/ac milan.gif" alt="AC Milan Logo">
+                      <img src="../assets/Images/teams/newcastle_united.gif" alt="Newcastle United Logo">
+                  </picture>
+                  <blockquote class="matches-teams">
+                      <p>Milan</p>
+                      <p>Newcastle United</p>
+                  </blockquote>
+                  <blockquote class="matches-scores">
+                      <p>0</p>
+                      <p>0</p>
+                  </blockquote>
+                  <blockquote class="matches-time">
+                      <p>Full time</p>
+                  </blockquote>
+              </div>
+              <div class="matches-card">
+                  <picture class="matches-logos">
+                      <img src="../assets/Images/teams/young boys.jpg" alt="BSC Young Boys Logo">
+                      <img src="../assets/Images/teams/rb-leipzig.png" alt="RB Leipzig Logo">
+                  </picture>
+                  <blockquote class="matches-teams">
+                      <p>BSC Young Boys</p>
+                      <p>RB Leipzig</p>
+                  </blockquote>
+                  <blockquote class="matches-scores">
+                      <p>1</p>
+                      <p>3</p>
+                  </blockquote>
+                  <blockquote class="matches-time">
+                      <p>Full time</p>
+                  </blockquote>
+              </div>
+              <div class="matches-card">
+                  <picture class="matches-logos">
+                      <img src="../assets/Images/teams/parissaint-germain.gif" alt="Parissaint-Germain Logo">
+                      <img src="../assets/Images/teams/borussia-dortmund.png" alt="Borussia-Dortmund Logo">
+                  </picture>
+                  <blockquote class="matches-teams">
+                      <p>PSG</p>
+                      <p>Borussia Dortmund</p>
+                  </blockquote>
+                  <blockquote class="matches-scores">
+                      <p>2</p>
+                      <p>0</p>
+                  </blockquote>
+                  <blockquote class="matches-time">
+                      <p>Full time</p>
+                  </blockquote>
+              </div>
+              <div class="matches-card">
+                  <picture class="matches-logos">
+                      <img src="../assets/Images/teams/manchester_city.jpg" alt="Manchester City Logo">
+                      <img src="../assets/Images/teams/red_star_belgrade.png" alt="Red Star Belgrade Logo">
+                  </picture>
+                  <blockquote class="matches-teams">
+                      <p>Manchester City</p>
+                      <p>Red Star Belgrade</p>
+                  </blockquote>
+                  <blockquote class="matches-scores">
+                      <p>3</p>
+                      <p>1</p>
+                  </blockquote>
+                  <blockquote class="matches-time">
+                      <p>Full time</p>
+                  </blockquote>
+              </div>
+              <div class="matches-card">
+                  <picture class="matches-logos">
+                      <img src="../assets/Images/teams/feyenoord.jpg" alt="Feyenoord Logo">
+                      <img src="../assets/Images/teams/celtic.gif" alt="Celtic Logo">
+                  </picture>
+                  <blockquote class="matches-teams">
+                      <p>Feyenoord</p>
+                      <p>Celtic</p>
+                  </blockquote>
+                  <blockquote class="matches-scores">
+                      <p>2</p>
+                      <p>0</p>
+                  </blockquote>
+                  <blockquote class="matches-time">
+                      <p>Full time</p>
+                  </blockquote>
+              </div>
+              <div class="matches-card">
+                  <picture class="matches-logos">
+                      <img src="../assets/Images/teams/lazio.gif" alt="Lazio Logo">
+                      <img src="../assets/Images/teams/atletico-de-madrid.png" alt="Atletico Madrid Logo">
+                  </picture>
+                  <blockquote class="matches-teams">
+                      <p>Lazio</p>
+                      <p>Atletico Madrid</p>
+                  </blockquote>
+                  <blockquote class="matches-scores">
+                      <p>1</p>
+                      <p>1</p>
+                  </blockquote>
+                  <blockquote class="matches-time">
+                      <p>Full time</p>
+                  </blockquote>
+              </div>
+              <div class="matches-card">
+                  <picture class="matches-logos">
+                      <img src="../assets/Images/teams/fc barcelona.gif" alt="Barcelona Logo">
+                      <img src="../assets/Images/teams/antwerp.gif" alt="Antwerp Logo">
+                  </picture>
+                  <blockquote class="matches-teams">
+                      <p>Barcelona</p>
+                      <p>Antwerp</p>
+                  </blockquote>
+                  <blockquote class="matches-scores">
+                      <p>5</p>
+                      <p>0</p>
+                  </blockquote>
+                  <blockquote class="matches-time">
+                      <p>Full time</p>
+                  </blockquote>
+              </div>
+              <div class="matches-card">
+                  <picture class="matches-logos">
+                      <img src="../assets/Images/teams/shakhtar donetsk.jpg" alt="Shakhtar Donetsk Logo">
+                      <img src="../assets/Images/teams/fc_porto.jpg" alt="FC Porto Logo">
+                  </picture>
+                  <blockquote class="matches-teams">
+                      <p>Shakhtar</p>
+                      <p>FC Porto</p>
+                  </blockquote>
+                  <blockquote class="matches-scores">
+                      <p>1</p>
+                      <p>3</p>
+                  </blockquote>
+                  <blockquote class="matches-time">
+                      <p>Full time</p>
+                  </blockquote>
+              </div>
+              <div>
+                <p>Go to standings</p>
+              </div>
         </aside>
-    </div>
-    <div>
-        <section>
-            <h1>Yesterday's Matches</h1>
-          </section>
-          <section class="cards-container">
-            <article class="matches-card">
-              <section class="matches-logos">
-                  <img src="../assets/Images/teams/ac milan.gif" alt="AC Milan Logo">
-                  <img src="../assets/Images/teams/newcastle_united.gif" alt="Newcastle United Logo">
-              </section>
-              <section class="matches-teams">
-                <p>Milan</p>
-                <p>Newcastle United</p>
-              </section>
-              <section class="matches-scores">
-                <p>0</p>
-                <p>0</p>
-              </section>
-              <section class="matches-time">
-                <p>Full time</p>
-              </section>
-            </article>
-            <article class="matches-card">
-              <section class="matches-logos">
-                  <img src="../assets/Images/teams/young boys.jpg" alt="BSC Young Boys Logo">
-                  <img src="../assets/Images/teams/rb-leipzig.png" alt="RB Leipzig Logo">
-              </section>
-              <section class="matches-teams">
-                <p>BSC Young Boys</p>
-                <p>RB Leipzig</p>
-              </section>
-              <section class="matches-scores">
-                <p>1</p>
-                <p>3</p>
-              </section>
-              <section class="matches-time">
-                <p>Full time</p>
-              </section>
-            </article>
-            <article class="matches-card">
-              <section class="matches-logos">
-                  <img src="../assets/Images/teams/parissaint-germain.gif" alt="Parissaint-Germain Logo">
-                  <img src="../assets/Images/teams/borussia-dortmund.png" alt="Borussia-Dortmund Logo">
-              </section>
-              <section class="matches-teams">
-                <p>PSG</p>
-                <p>Borussia Dortmund</p>
-              </section>
-              <section class="matches-scores">
-                <p>2</p>
-                <p>0</p>
-              </section>
-              <section class="matches-time">
-                <p>Full time</p>
-              </section>
-            </article>
-            <article class="matches-card">
-              <section class="matches-logos">
-                  <img src="../assets/Images/teams/manchester_city.jpg" alt="Manchester City Logo">
-                  <img src="../assets/Images/teams/red_star_belgrade.png" alt="Red Star Belgrade Logo">
-              </section>
-              <section class="matches-teams">
-                <p>Manchester City</p>
-                <p>Red Star Belgrade</p>
-              </section>
-              <section class="matches-scores">
-                <p>3</p>
-                <p>1</p>
-              </section>
-              <section class="matches-time">
-                <p>Full time</p>
-              </section>
-            </article>
-            <article class="matches-card">
-              <section class="matches-logos">
-                  <img src="../assets/Images/teams/feyenoord.jpg" alt="Feyenoord Logo">
-                  <img src="../assets/Images/teams/celtic.gif" alt="Celtic Logo">
-              </section>
-              <section class="matches-teams">
-                <p>Feyenoord</p>
-                <p>Celtic</p>
-              </section>
-              <section class="matches-scores">
-                <p>2</p>
-                <p>0</p>
-              </section>
-              <section class="matches-time">
-                <p>Full time</p>
-              </section>
-            </article>
-            <article class="matches-card">
-              <section class="matches-logos">
-                  <img src="../assets/Images/teams/lazio.gif" alt="Lazio Logo">
-                  <img src="../assets/Images/teams/atletico-de-madrid.png" alt="Atletico Madrid Logo">
-              </section>
-              <section class="matches-teams">
-                <p>Lazio</p>
-                <p>Atletico Madrid</p>
-              </section>
-              <section class="matches-scores">
-                <p>1</p>
-                <p>1</p>
-              </section>
-              <section class="matches-time">
-                <p>Full time</p>
-              </section>
-            </article>
-            <article class="matches-card">
-              <section class="matches-logos">
-                  <img src="../assets/Images/teams/fc barcelona.gif" alt="Barcelona Logo">
-                  <img src="../assets/Images/teams/antwerp.gif" alt="Antwerp Logo">
-              </section>
-              <section class="matches-teams">
-                <p>Barcelona</p>
-                <p>Antwerp</p>
-              </section>
-              <section class="matches-scores">
-                <p>5</p>
-                <p>0</p>
-              </section>
-              <section class="matches-time">
-                <p>Full time</p>
-              </section>
-            </article>
-            <article class="matches-card">
-              <section class="matches-logos">
-                  <img src="../assets/Images/teams/shakhtar donetsk.jpg" alt="Shakhtar Donetsk Logo">
-                  <img src="../assets/Images/teams/fc_porto.jpg" alt="FC Porto Logo">
-              </section>
-              <section class="matches-teams">
-                <p>Shakhtar</p>
-                <p>FC Porto</p>
-              </section>
-              <section class="matches-scores">
-                <p>1</p>
-                <p>3</p>
-              </section>
-              <section class="matches-time">
-                <p>Full time</p>
-              </section>
-            </section>
-          </article>
-          <aside>
-            <p>Go to standings</p>
-          </aside>
-    </div>
-  </main>
-  
-  <footer class="dark-background scondary-text">
-    <p>Copyright ©</p>
-  </footer>
-</body>
-
-
-</html>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright ©</p>
+    </footer>
+  </body>
+  </html>
